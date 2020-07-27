@@ -23,6 +23,7 @@ class Home extends Component {
     }
 
 
+    // Clear the search user
     clearSearch() {
         this.setState({
             user: "",
@@ -32,6 +33,9 @@ class Home extends Component {
             loading: false
         })
     }
+
+    // Set state the user
+
     changeUser = user => {
         this.setState({ user });
     };
@@ -61,6 +65,8 @@ class Home extends Component {
             });
         }
     };
+
+    
     render() {
         const { user, repos, error, loading, infoUser } = this.state;
         return (

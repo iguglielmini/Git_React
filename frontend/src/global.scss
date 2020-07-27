@@ -20,7 +20,7 @@ body {
 }
 
 //General SCSS
-.container{
+.container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -28,7 +28,7 @@ body {
     max-width: 1120px;
     align-items: center;
     justify-content: center;
-    .content{
+    .content {
         width: 100%;
         padding: 30px;
         display: flex;
@@ -38,5 +38,50 @@ body {
         background-color: #f0f0f5;
         justify-content: space-between;
         box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
+    }
+}
+
+// Responsive Mobile Small
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+    .container {
+        .content {
+            background-color: transparent !important;
+            box-shadow: none !important;
+        }
+    }
+    .header {
+        flex-direction: column !important;
+        .git-search {
+            flex-direction: column !important;
+            img {
+                width: 60px !important;
+            }
+            .input-search {
+                width: 300px;
+                margin-left: 0px !important;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .btn-buscar {
+                width: 100% !important;
+                margin-left: 0 !important;
+                margin-bottom: 5px;
+            }
+            .btn-clear {
+                margin-left: 0 !important;
+                width: 310px !important;
+                margin-bottom: 5px;
+            }
+        }
+        .dev-developer{
+            display: none !important;
+        }
+    }
+    //Result Search 
+    .container-result-search{
+        flex-direction: column;
+         .card-user {
+            width: 253px !important;
+         }
     }
 }
