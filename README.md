@@ -22,5 +22,3 @@
 - Return User Data (name, login, Avatar, Location)
 - Return Repository (Repository Name)
 
-# Test using
-- Jest
